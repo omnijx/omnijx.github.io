@@ -70,7 +70,7 @@ skills:
 
   column1:
     items:
-      - label: "PHP" #0-10 progress in dots
+      - label: "JAVA" #0-10 progress in dots
         text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         value: "85" #0-100 progress in %
 
@@ -84,17 +84,17 @@ skills:
         text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         value: "75" #0-100 progress in %
 
-      - label: "React" #0-10 progress in dots
+      - label: "HTML" #0-10 progress in dots
         text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         value: "70" #0-100 progress in %
 
   column3:
     items:
-      - label: "WordPress" #0-10 progress in dots
+      - label: "JSP" #0-10 progress in dots
         text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         value: "90" #0-100 progress in %
 
-      - label: "Adobe XD" #0-10 progress in dots
+      - label: "Oracle" #0-10 progress in dots
         text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         value: "80" #0-100 progress in %
 
