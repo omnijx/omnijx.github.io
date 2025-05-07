@@ -257,19 +257,19 @@ contacts:
   list:
     - label: "Address"
       icon: "far fa-map"
-      text: "North Tower, Toronto, Canada"
+      text: "경기도 파주시 책향기로 371, 이하 개인정보보호법 위반반"
 
     - label: "Freelance"
       icon: "far fa-user"
-      text: "Available Right Now"
+      text: "언제든든"
 
     - label: "Email"
       icon: "far fa-envelope"
-      text: "zoe.miller@mydomain.com"
+      text: "chlwls135@naver.com"
 
     - label: "Phone"
       icon: "far fa-address-book"
-      text: "+1 900 - 900 - 9000"
+      text: "+82 010 - 5894 - 5806"
 
 ### Portfolio [ portfolio ]
 #items generates from dir /_works/*
