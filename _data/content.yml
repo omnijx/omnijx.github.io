@@ -6,24 +6,24 @@
 ### Hero [ hero-image ]
 hero:
   image: "assets/img/profile2.png"
-  image_alt: "초이혁"
-  before_title: "반갑습니다다, <b>내 이름은</b>"
-  title: "<b>초이</b> 혁"
+  image_alt: "최진혁"
+  before_title: "반갑습니다, <b>제제 이름은</b>"
+  title: "<b>최진혁</b>"
   after_title: "I am <strong>Cyber Security Professional</strong>"
   description: "폴리텍 대학 강서캠퍼스 사이버 보안과 2학년 입니다."
   button1:
-    label: "이력서 다운받기"
-    link: "ㅡㅡ"
+    label: "github"
+    link: "https://github.com/omnijx"
   button2:
     label: "My Skills"
     link: "#skills-section"
   bg_title: "Cyber Security"
-  info:
-    - num: "2 <strong>+</strong>"
-      value: "Years of <strong>Experience</strong>"
+  # info:
+  #   - num: "2 <strong>+</strong>"
+  #     value: "Years of <strong>Experience</strong>"
 
-    - num: "4"
-      value: "Completed <strong>Projects</strong>"
+  #   - num: "4"
+  #     value: "Completed <strong>Projects</strong>"
 
 ### Services [ services ]
 services:
