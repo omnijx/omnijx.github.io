@@ -1,7 +1,7 @@
 ---
 # preview details
 layout: works-single
-title: Kana
+title: Spring 게시판
 category: Photography
 category_slug: photography
 image: assets/img/works/image3.png
