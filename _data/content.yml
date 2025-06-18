@@ -32,35 +32,23 @@ services:
   bg_title: "Services"
 
   items:
-    - title: "Web Design &amp; Logo"
-      subtitle: "Web Development"
-      text: "Web designers craft the overall vision &amp; plan for a website layout. Professional logo development: Business, Company, or Personal."
-      button_label: "See Pricing"
-      button_link: "#pricing-section"
+    - title: "웹 개발 (백엔드)"
+      subtitle: "서버·API 개발"
+      text: "웹사이트의 서버, 데이터 처리, API 구현 등 핵심 기능을 개발합니다. 안정적이고 확장 가능한 백엔드 시스템을 구축합니다."
 
-    - title: "iOS &amp; Android"
-      subtitle: "Apps Development"
-      text: "Design Software applications to run on mobile devices. Modern and mobile-ready application that will help you reach all of your marketing."
-      button_label: "See Pricing"
-      button_link: "#pricing-section"
 
-    - title: "Unity &amp; Unreal Engine"
-      subtitle: "Game Development"
-      text: "Creating games &amp; describes the design, development and release of a game. Developing unique mobile android and ios games."
-      button_label: "See Pricing"
-      button_link: "#pricing-section"
+    - title: "웹 개발 (프론트)"
+      subtitle: "사용자 인터페이스 개발"
+      text: "반응형 웹 디자인, 사용자 경험(UX) 중심의 인터페이스를 제작합니다. 모든 기기에서 최적화된 웹 환경을 제공합니다."
 
-    - title: "Google Ads"
-      subtitle: "Advertising"
-      text: "Advertising services include: Google search result pages, gmails, YouTube and other websites participated in Google Ads program."
-      button_label: "See Pricing"
-      button_link: "#pricing-section"
 
-    - title: "Sound Track"
-      subtitle: "Music Writing"
-      text: "Music copying, writing, creating, transcription and composition services."
-      button_label: "See Pricing"
-      button_link: "#pricing-section"
+    - title: "데이터베이스 (Oracle, MySQL)"
+      subtitle: "데이터베이스 구축 및 관리"
+      text: "Oracle, MySQL 등 다양한 데이터베이스 설계와 최적화, 데이터 보안 및 백업 등 신뢰성 있는 데이터 관리 서비스를 제공합니다."
+
+
+
+
 
 ### Skills [ skills ]
 skills:
@@ -68,35 +56,36 @@ skills:
   subtitle: "my <b>Talent</b>"
   bg_title: "Skills"
 
-  column1:
-    items:
-      - label: "JAVA" #0-10 progress in dots
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-        value: "85" #0-100 progress in %
+column1:
+  items:
+    - label: "JAVA"
+      text: "객체지향 프로그래밍 언어로, 웹 및 서버 개발에 활용됩니다."
+      value: "85"
 
-      - label: "Python" #0-10 progress in dots
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-        value: "75" #0-100 progress in %
+    - label: "Python"
+      text: "쉬운 문법과 강력한 라이브러리로 데이터 분석, 웹, 인공지능 등 다양한 분야에 사용됩니다."
+      value: "75"
 
-  column2:
-    items:
-      - label: "JavaScript" #0-10 progress in dots
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-        value: "75" #0-100 progress in %
+column2:
+  items:
+    - label: "JavaScript"
+      text: "웹 페이지의 동적 기능을 구현하는 대표적인 스크립트 언어입니다."
+      value: "75"
 
-      - label: "HTML" #0-10 progress in dots
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-        value: "70" #0-100 progress in %
+    - label: "HTML"
+      text: "웹 페이지의 구조와 내용을 작성하는 기본 마크업 언어입니다."
+      value: "70"
 
-  column3:
-    items:
-      - label: "JSP" #0-10 progress in dots
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-        value: "90" #0-100 progress in %
+column3:
+  items:
+    - label: "JSP"
+      text: "Java 기반의 웹 애플리케이션 개발에 사용되는 서버 사이드 스크립트입니다."
+      value: "90"
 
-      - label: "Oracle" #0-10 progress in dots
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-        value: "80" #0-100 progress in %
+    - label: "Oracle"
+      text: "대규모 데이터 관리를 위한 안정적인 관계형 데이터베이스 시스템입니다."
+      value: "80"
+
 
 ### Resume [ resume ]
 resume:
