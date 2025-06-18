@@ -3,7 +3,7 @@ layout: post
 title:  XSS 취약점
 date:   2025-06-19
 category: security
-image: assets/img/blog/blog11.jpg
+image: /assets/img/blog/blog11.jpg
 author: 최진혁
 tags: xss, web-security
 ---
