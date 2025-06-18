@@ -5,7 +5,7 @@
 
 ### Hero [ hero-image ]
 hero:
-  image: "assets/img/profile2.png"
+  image: "assets/img/profile.png"
   image_alt: "최진혁"
   before_title: "반갑습니다, <b>제제 이름은</b>"
   title: "<b>최진혁</b>"
