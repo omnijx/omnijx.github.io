@@ -1,10 +1,10 @@
 ---
 # preview details
 layout: works-single
-title: Gooir
+title: 웹보안키보드
 category: UI UX Design
 category_slug: ui-ux-design
-image: assets/img/works/work4.jpeg
+image: assets/img/works/image2.png
 short_description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
 
 # full details

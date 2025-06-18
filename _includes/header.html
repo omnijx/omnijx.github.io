@@ -12,13 +12,15 @@
 				<!-- logo -->
 				<div class="logo">
 					<a href="{{ site.url }}">
-						<img width="{{ header.logo.width }}" height="{{ header.logo.height }}" src="{{ header.logo.image | relative_url }}" alt="{{ header.logo.alt }}" />
+						<h4>
+							Choi Jin Hyuck Blog
+						</h4>
 					</a>
 				</div>
-
+				
 			</div>
 			<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 align-right">
-
+				
 				<!-- switcher btn -->
 				<a href="#" class="switcher-btn">
 					<span class="sw-before">
@@ -32,20 +34,20 @@
 						</svg>
 					</span>
 				</a>
-
+				
 				<!-- menu btn -->
 				<a href="#" class="menu-btn">
 					<span></span>
 					<span></span>
 				</a>
-
+				
 				<!-- Menu Full Overlay -->
 				<div class="menu-full-overlay">
 					<div class="menu-full-container">
 						<div class="container">
 							<div class="row">
 								<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-
+									
 									<!-- menu full -->
 									<div class="menu-full">
 										<ul class="menu-full">
@@ -67,7 +69,7 @@
 											{% endfor %}
 										</ul>
 									</div>
-
+									
 									<!-- social -->
 									<div class="menu-social-links">
 										{% for link in social %}
@@ -77,17 +79,19 @@
 										</a>
 										{% endfor %}
 									</div>
-
+									
 									<div class="v-line-block"><span></span></div>
-
+									
 								</div>
 							</div>
 						</div>
 					</div>
 					<div class="menu-overlay"></div>
 				</div>
-
+				
 			</div>
 		</div>
 	</div>
 </header>
+
+<!-- <img width="{{ header.logo.width }}" height="{{ header.logo.height }}" src="{{ header.logo.image | relative_url }}" alt="{{ header.logo.alt }}" /> -->
