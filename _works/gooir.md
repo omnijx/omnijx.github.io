@@ -11,7 +11,7 @@ short_description: 웹 보안 키패드 프로젝트는 웹 가상 키패드를 
 
 # full details
 live_preview: https://bslthemes.com
-full_image: assets/img/works/single1.png
+full_image: assets/img/works/image2.png
 info:
   - label: Year
     value: 2022
