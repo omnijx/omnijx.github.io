@@ -56,36 +56,35 @@ skills:
   subtitle: "my <b>Talent</b>"
   bg_title: "Skills"
 
-column1:
-  items:
-    - label: "JAVA"
-      text: "객체지향 프로그래밍 언어로, 웹 및 서버 개발에 활용됩니다."
-      value: "85"
+  column1:
+    items:
+      - label: "JAVA" #0-10 progress in dots
+        text: "객체지향 프로그래밍 언어로, 웹 및 서버 개발에 활용됩니다."
+        value: "85" #0-100 progress in %
 
-    - label: "Python"
-      text: "쉬운 문법과 강력한 라이브러리로 데이터 분석, 웹, 인공지능 등 다양한 분야에 사용됩니다."
-      value: "75"
+      - label: "Python" #0-10 progress in dots
+        text: "쉬운 문법과 강력한 라이브러리로 데이터 분석, 웹, 인공지능 등 다양한 분야에 사용됩니다."
+        value: "75" #0-100 progress in %
 
-column2:
-  items:
-    - label: "JavaScript"
-      text: "웹 페이지의 동적 기능을 구현하는 대표적인 스크립트 언어입니다."
-      value: "75"
+  column2:
+    items:
+      - label: "JavaScript" #0-10 progress in dots
+        text: "웹 페이지의 동적 기능을 구현하는 대표적인 스크립트 언어입니다."
+        value: "75" #0-100 progress in %
 
-    - label: "HTML"
-      text: "웹 페이지의 구조와 내용을 작성하는 기본 마크업 언어입니다."
-      value: "70"
+      - label: "HTML" #0-10 progress in dots
+        text: "웹 페이지의 구조와 내용을 작성하는 기본 마크업 언어입니다."
+        value: "70" #0-100 progress in %
 
-column3:
-  items:
-    - label: "JSP"
-      text: "Java 기반의 웹 애플리케이션 개발에 사용되는 서버 사이드 스크립트입니다."
-      value: "90"
+  column3:
+    items:
+      - label: "JSP" #0-10 progress in dots
+        text: "Java 기반의 웹 애플리케이션 개발에 사용되는 서버 사이드 스크립트입니다."
+        value: "90" #0-100 progress in %
 
-    - label: "Oracle"
-      text: "대규모 데이터 관리를 위한 안정적인 관계형 데이터베이스 시스템입니다."
-      value: "80"
-
+      - label: "Oracle" #0-10 progress in dots
+        text: "대규모 데이터 관리를 위한 안정적인 관계형 데이터베이스 시스템입니다."
+        value: "80" #0-100 progress in %
 
 ### Resume [ resume ]
 resume:
@@ -96,35 +95,27 @@ resume:
   education:
     title: "Education"
     items:
-      - name: "CoderHouse Courses"
-        subname: "Backend Programming"
-        period: "2014 - 2016"
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      - name: "한국폴리텍대학교"
+        subname: "사이버보안과"
+        period: "2024 - 2026"
+        text: ""
 
-      - name: "Lviv National Academy of Arts"
+      - name: "사이버보안과에서 해킹과 보안 기술, 네트워크·시스템 보안 등 이론과 실습을 통해 학습했습니다.  
+                실제 공격과 방어 시나리오를 경험하며 실무 중심의 역량을 쌓았습니다."
         subname: "Faculty of Design"
         period: "2012 - 2014"
         text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
 
-      - name: "IT Future"
-        subname: "High School"
-        period: "2010 - 2012"
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-
   experience:
     title: "Experience"
-    items:
-      - name: "UI Head &amp; Manager"
-        subname: "Soft Tech Inc."
-        period: "2020 - <b>Present</b>"
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    items:   
 
-      - name: "UI / UX Specialist"
+      - name: "리눅스 마스터 2급"
         subname: "Kana Design Studio"
         period: "2018 - 2020"
         text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
 
-      - name: "Plugins Developer"
+      - name: "정보처리산업기사"
         subname: "Fiverr.com"
         period: "2016 - 2018"
         text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
