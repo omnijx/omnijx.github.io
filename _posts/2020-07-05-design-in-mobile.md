@@ -1,21 +1,17 @@
 ---
-
-### 2. CSRF (Cross-Site Request Forgery)
-
-```markdown
----
 layout: post
 title:  웹 취약점: CSRF(Cross-Site Request Forgery) 제대로 알기
 date:   2024-06-19
 category: Web Security
-image: assets/img/blog/image.png
+image: _site/assets/img/blog/image.png
 author: 최진혁
 tags:
   - 웹보안
   - CSRF
   - 해킹
----
+  
 
+### 2. CSRF (Cross-Site Request Forgery)
 CSRF(Cross-Site Request Forgery, 이하 CSRF)는 사용자가 인증된 세션을 이용해,  
 의도하지 않은 요청을 공격자가 대신 보내도록 유도하는 웹 취약점입니다.  
 사용자가 모르게 공격자 의도대로 데이터가 변경될 수 있기 때문에 매우 위험합니다.
