@@ -5,11 +5,13 @@ title: 웹보안키보드
 category: UI UX Design
 category_slug: ui-ux-design
 image: assets/img/works/image2.png
-short_description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+short_description: 웹 보안 키패드 프로젝트는 웹 가상 키패드를 통해 입력값을 받음으로써 키로거 등 보안 위협을 줄이고자 했습니다.
+ 입력할 때마다 키패드 배열을 무작위로 섞고, 입력값은 화면에 *로 표시해 보안성을 높였습니다.
+ 또한 입력값을 SHA-256 해시로 암호화하여 개인정보 유출 위험을 최소화하는 방식을 적용했습니다..
 
 # full details
 live_preview: https://bslthemes.com
-full_image: assets/img/works/single1.jpg
+full_image: assets/img/works/single1.png
 info:
   - label: Year
     value: 2022

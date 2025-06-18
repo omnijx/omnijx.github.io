@@ -4,8 +4,9 @@ layout: works-single
 title: FC서울 홈페이지
 category: Development
 category_slug: development
-image: assets/img/works/work7.jpg
-short_description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+image: assets/img/works/image.png
+short_description: 프로젝트 소개 FC 서울 홈페이지 개발
+  (JSP 를 활용한 웹사이트 구축, 웹 페이지의 구성과 페이지와 서버의 통신구조 파악).
 
 # full details
 live_preview: https://bslthemes.com
