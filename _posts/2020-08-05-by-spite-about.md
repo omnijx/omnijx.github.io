@@ -30,15 +30,12 @@ query = "SELECT * FROM users WHERE username = '" + username + "' AND password = 
 
 만약 username에
 
-vbnet
-복사
-편집
+
 admin' -- 
 을 입력하면 쿼리는 아래처럼 바뀝니다.
 
 sql
-복사
-편집
+
 SELECT * FROM users WHERE username = 'admin' -- ' AND password = '1234'
 -- 뒤는 주석 처리되어 비밀번호 조건이 무시되고,
 비밀번호를 몰라도 관리자 로그인이 가능합니다.

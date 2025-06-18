@@ -30,9 +30,6 @@ def search():
     return f"검색 결과: {query}"
 여기서 입력값에
 
-php-template
-복사
-편집
 <script>alert('XSS!')</script>
 를 넣으면, 해당 스크립트가 그대로 실행됩니다.
 이로 인해 사용자 쿠키 탈취, 피싱 등 다양한 피해가 발생할 수 있습니다.
