@@ -4,7 +4,7 @@ layout: works-single
 title: Spring 게시판
 category: Photography
 category_slug: photography
-image: assets/img/works/image3.png
+image: assets/img/works/image4.png
 short_description: Spring Framework를 활용한 게시판 프로젝트를 진행하며 유닛 테스트의 중요성을 크게 느꼈습니다.
  유닛 테스트를 통해 각 모듈의 동작을 확인하고, 버그를 조기에 발견하여 안정성을 높일 수 있었습니다.
  또한, 테스트를 작성하는 과정에서 코드의 가독성과 유지보수성을 개선할 수 있었고, 테스트 주도 개발 방식(TDD)도 일부 도입해 품질 향상에 기여했습니다.
@@ -13,7 +13,7 @@ short_description: Spring Framework를 활용한 게시판 프로젝트를 진�
 
 # full details
 live_preview: https://bslthemes.com
-full_image: assets/img/works/image3.png
+full_image: assets/img/works/image4.png
 info:
   - label: Year
     value: 2022
