@@ -3,7 +3,7 @@ layout: post
 title:  웹 취약점: SQL Injection 제대로 알기
 date:   2024-06-19
 category: Web Security
-image: assets/img/blog11.jpg
+image: "assets/img/blog11.jpg"
 author: 최진혁
 tags:
   - 웹보안
