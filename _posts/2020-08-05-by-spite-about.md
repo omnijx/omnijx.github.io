@@ -1,14 +1,11 @@
 ---
 layout: post
-title:  웹 취약점: SQL Injection 제대로 알기
+title: SQL Injection 취약점
 date:   2024-06-19
 category: Web Security
 image: "assets/img/blog/blog11.jpg"
 author: 최진혁
-tags:
-  - 웹보안
-  - SQL Injection
-  - 해킹
+tags: 웹보안, SQL Injection, 해킹
 ---
 
 SQL Injection(SQL 인젝션, 이하 SQLi)은 웹 개발자라면 반드시 알고 넘어가야 할 대표적인 웹 취약점입니다.  

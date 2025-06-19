@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  CSRF 기초
+title:  CSRF 취약
 date:   2025-06-19
 category: security
 image: "assets/img/blog/blog11.jpg"
